@@ -145,6 +145,9 @@ a {
     padding: 40px;
     margin: 0 auto;
 }
+img {
+    max-width: 100%;
+}
 
 
 /* Project */
@@ -264,4 +267,10 @@ footer.main {
 .arrow.dark {
     color: #000;
     background-color: #000;
+}
+
+@media all and (max-width: 1024px) {
+    .cont {
+        padding: 40px 20px;
+    }
 }
