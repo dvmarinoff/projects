@@ -1,0 +1,267 @@
+/* RESET */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav ul, ul.clean {
+    margin-left: 0;
+    list-style-type: none!important;
+}
+a, a:visited {
+    text-decoration: none;
+}
+h1, h2 {
+    font-weight: normal;
+}
+h3, h4, h5, h6 {
+    font-weight: normal;
+}
+a:focus {
+    outline: none;
+}
+a::-moz-focus-inner {
+    border: 0;
+}
+input, select, textarea {
+    outline: 0;
+}
+input[type="button"] {
+    outline: none;
+}
+input[type="button"]::-moz-focus-inner {
+    border: 0;
+}
+button {
+    outline: none;
+}
+button::-moz-focus-inner {
+    border: 0;
+}
+img {
+    outline: 0!important;
+    border: 0!important;
+}
+
+/* DEFAULTS */
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 1.4em;
+    background-color: #fff;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.inner-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 0px;
+}
+header, footer, section, article, nav {
+    display: block;
+}
+
+/* CLEARFIX */
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+    /*For IE 6/7 only*/
+}
+
+/* FONTS */
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* COLOR */
+.black-bg {
+    color: #fff;
+    background-color: #000;
+}
+.editor-bg {
+    color: #fff;
+    background-color: #292b2e;
+}
+.white-bg {
+    color: #000;
+    background-color: #fff;
+}
+.white-bg a {
+    color: #000;
+}
+.blue {
+    color: #4d97d7;
+}
+.blue-bg {
+    background-color: #4d97d7;
+}
+.purple {
+    color: #bc6db9;
+}
+.purple-bg {
+    background-color: #bc6db9;
+}
+.green {
+    color: #2a6d6d;
+}
+.green-bg {
+    background-color: #2a6d6d;
+}
+.red {
+    color: #ce5378;
+}
+.red-bg {
+    background-color: #ce5378;
+}
+.green-1 {
+    color: #71841f;
+}
+.gray-bg {
+    background-color: #dedede;
+    width: 100%;
+}
+a {
+    color: #fff;
+}
+
+/* LAYOUT */
+.cont {
+    width: 100%;
+    max-width: 1024px;
+    padding: 40px;
+    margin: 0 auto;
+}
+
+
+/* Project */
+.project {
+    text-align: center;
+}
+
+.project-title {
+    margin: 0px auto 40px;
+}
+
+.project-image {
+    max-width: 100%;
+}
+
+.project-link {
+    display: inline-block;
+    margin: 25px auto 40px;
+    padding: 0px 20px;
+    line-height: 40px;
+}
+.project-link.black {
+    color: #000;
+    border: 1px solid #000;
+}
+.project-link.white {
+    color: #fff;
+    border: 1px solid #fff;
+}
+.project-description {
+    margin: 20px auto 0px;
+    font-size: 12px;
+}
+
+.disk {
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.disk.black {
+    background-color: #000;
+}
+.disk.white {
+    background-color: #fff;
+}
+
+header.main {
+    /* height: 140px; */
+    /* height: 900px; */
+    text-align: center;
+    line-height: 30px;
+
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+header.main img {
+    margin-top: 40px;
+}
+
+.code a {
+    font-size: 14px;
+}
+
+.br {
+    height: 1px;
+    margin: 100px auto 40px;
+}
+footer.main {
+    text-align: center;
+}
+.github {
+    display: inline-block;
+}
+
+/* Glyph Arrow */
+.arrow {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(90deg);
+}
+.arrow::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    width: 8px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+.arrow::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: -3px;
+    width: 8px;
+    height: 2px;
+    background-color: #000;
+    transform: rotate(-45deg);
+}
+.arrow.dark {
+    color: #000;
+    background-color: #000;
+}
