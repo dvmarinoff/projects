@@ -157,6 +157,7 @@ img {
 
 .project-title {
     margin: 0px auto 40px;
+    text-transform: uppercase;
 }
 
 .project-image {
@@ -168,6 +169,8 @@ img {
     margin: 25px auto 40px;
     padding: 0px 20px;
     line-height: 40px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .project-link.black {
     color: #000;
